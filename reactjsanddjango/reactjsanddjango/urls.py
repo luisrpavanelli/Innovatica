@@ -1,4 +1,5 @@
 from django.urls import path
+from rest_framework.authtoken.views import ObtainAuthToken
 from django.views.generic import RedirectView
 from reactjsanddjangoapp.views import (
     UsuarioListCreateAPIView,
@@ -8,7 +9,6 @@ from reactjsanddjangoapp.views import (
     UsuarioDetailAPIView,
     ProdutoDetailAPIView,
 )
-from rest_framework.authtoken.views import ObtainAuthToken
 
 urlpatterns = [
     path('', RedirectView.as_view(url='usuarios/')),
