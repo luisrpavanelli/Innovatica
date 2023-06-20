@@ -1,2 +1,0 @@
-# Innovatica
- Innovatica App
